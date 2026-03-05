@@ -8,19 +8,19 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#020617;
-  --bg2:#020617;
-  --bg3:#030b1f;
-  --panel:#030c22;
+--bg:#020617;
+--bg2:#020617;
+--bg3:#030b1f;
+--panel:#030c22;
 
-  --red:#00e5ff;
-  --red2:#0095ff;
-  --red-dim:#0a2f4d;
-  --red-glow:rgba(0,200,255,0.25);
+--red:#00e5ff;
+--red2:#0095ff;
+--red-dim:#0a2f4d;
+--red-glow:rgba(0,200,255,0.25);
 
-  --text:#e6f3ff;
-  --dim:#3a5166;
-  --muted:#5d7a94;
+--text:#e6f3ff;
+--dim:#3a5166;
+--muted:#5d7a94;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--mono);overflow-x:hidden;cursor:none}
@@ -56,22 +56,22 @@ section{position:relative;z-index:1}
 .hero-name{font-family:var(--display);font-size:clamp(38px,5.5vw,78px);font-weight:900;line-height:1.0;letter-spacing:-0.01em;margin-bottom:14px;text-transform:uppercase}
 .hero-name .l1{color:var(--text);display:block}
 .hero-name .l2{
-  color:var(--red); display:block; ext-shadow:0 0 20px var(--red), 0 0 40px var(--red-glow);
-  animation:glitch 4s infinite
+color:var(--red); display:block; ext-shadow:0 0 20px var(--red), 0 0 40px var(--red-glow);
+animation:glitch 4s infinite
 }@keyframes glitch{
-  0%,95%,100%{
-    text-shadow:0 0 20px var(--red);
-    transform:none
-  }
-  96%{
-    transform:translate(-3px,0);
-    text-shadow:3px 0 var(--red),-3px 0 var(--red-glow)
-  }
-  97%{
-    transform:translate(3px,0);
-    text-shadow:-3px 0 var(--red),3px 0 var(--red-glow)
-  }
-  98%{transform:none}
+0%,95%,100%{
+text-shadow:0 0 20px var(--red);
+transform:none
+}
+96%{
+transform:translate(-3px,0);
+text-shadow:3px 0 var(--red),-3px 0 var(--red-glow)
+}
+97%{
+transform:translate(3px,0);
+text-shadow:-3px 0 var(--red),3px 0 var(--red-glow)
+}
+98%{transform:none}
 }
 .hero-role{font-family:var(--vt);font-size:24px;color:var(--red);letter-spacing:0.1em;margin-bottom:24px}
 .hero-role::before{content:'[ '}
@@ -157,16 +157,16 @@ section{position:relative;z-index:1}
 .skill-pill img,.skill-pill .s-icon{width:18px;height:18px;object-fit:contain;flex-shrink:0;filter:brightness(0.7) saturate(0.5)}
 .skill-pill:hover img,.skill-pill:hover .s-icon{filter:brightness(1) saturate(1)}
 .s-icon{font-size:15px;width:18px;text-align:center}
- 
-  #skills::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(900px 380px at 12% 8%, rgba(0,229,255,0.10), transparent 60%),
-    radial-gradient(900px 380px at 88% 22%, rgba(0,149,255,0.08), transparent 62%);
-  pointer-events:none;
-  z-index:0;
+
+#skills::before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(900px 380px at 12% 8%, rgba(0,229,255,0.10), transparent 60%),
+radial-gradient(900px 380px at 88% 22%, rgba(0,149,255,0.08), transparent 62%);
+pointer-events:none;
+z-index:0;
 }
 #skills > *{position:relative;z-index:1}
 
@@ -203,13 +203,13 @@ footer .red{color:var(--red)}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 @media(max-width:768px){
-  nav{padding:0 20px}
-  .nav-links{display:none}
-  #home,#about,#projects,#skills,#contact{padding:90px 20px 60px}
-  .hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
-  .hero-terminal{display:none}
-  footer{flex-direction:column;gap:6px;text-align:center;padding:20px}
-  .proj-card{padding:24px}
+nav{padding:0 20px}
+.nav-links{display:none}
+#home,#about,#projects,#skills,#contact{padding:90px 20px 60px}
+.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+.hero-terminal{display:none}
+footer{flex-direction:column;gap:6px;text-align:center;padding:20px}
+.proj-card{padding:24px}
 }
 </style>
 </head>
@@ -221,324 +221,324 @@ footer .red{color:var(--red)}
 
 <!-- NAV -->
 <nav>
-  <a href="#home" class="nav-logo">JACKSON<span>_HERISSE</span></a>
-  <div class="nav-status"><span class="blink">█</span> SYSTEM ONLINE</div>
-  <ul class="nav-links">
-    <li><a href="#about">./about</a></li>
-    <li><a href="#projects">./projects</a></li>
-    <li><a href="#skills">./skills</a></li>
-    <li><a href="#contact">./contact</a></li>
-  </ul>
+<a href="#home" class="nav-logo">JACKSON<span>_HERISSE</span></a>
+<div class="nav-status"><span class="blink">█</span> SYSTEM ONLINE</div>
+<ul class="nav-links">
+<li><a href="#about">./about</a></li>
+<li><a href="#projects">./projects</a></li>
+<li><a href="#skills">./skills</a></li>
+<li><a href="#contact">./contact</a></li>
+</ul>
 </nav>
 
 <!-- HERO -->
 <section id="home">
-  <div class="hero-inner">
-    <div>
-      <div class="terminal-header"></div>
-      <h1 class="hero-name">
-        <span class="l1">JACKSON</span>
-        <span class="l2">HERISSE</span>
-      </h1>
-      <div class="hero-role">Cybersecurity &amp; Cloud Engineering</div>
-      <p class="hero-bio">
-        MS in Information Technology (Cyber Intelligence focus) at Florida State University and Network Implementation Engineer at Lumen.
-        I build secure cloud labs, analyze network traffic, and design practical security solutions—focused on detection, automation, and
-        real-world operations.
-      </p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-red">VIEW PROJECTS &rarr;</a>
-        <a href="#contact" class="btn-ghost">INITIATE CONTACT</a>
-      </div>
-    </div>
-    <div class="hero-terminal">
-      <div class="tbar">
-        <span class="td r"></span><span class="td y"></span><span class="td g"></span>
-        <span class="ttitle">root@jackson-herisse:~</span>
-      </div>
-      <div class="tbody">
-        <div class="tl"><span class="tp">$</span><span class="tc">whoami</span></div>
-        <div class="tl"><span class="to red">jackson_herisse — Cybersecurity / Cloud Engineer</span></div>
+<div class="hero-inner">
+<div>
+<div class="terminal-header"></div>
+<h1 class="hero-name">
+<span class="l1">JACKSON</span>
+<span class="l2">HERISSE</span>
+</h1>
+<div class="hero-role">Cybersecurity &amp; Cloud Engineering</div>
+<p class="hero-bio">
+MS in Information Technology (Cyber Intelligence focus) at Florida State University and Network Implementation Engineer at Lumen.
+I build secure cloud labs, analyze network traffic, and design practical security solutions—focused on detection, automation, and
+real-world operations.
+</p>
+<div class="hero-btns">
+<a href="#projects" class="btn-red">VIEW PROJECTS &rarr;</a>
+<a href="#contact" class="btn-ghost">INITIATE CONTACT</a>
+</div>
+</div>
+<div class="hero-terminal">
+<div class="tbar">
+<span class="td r"></span><span class="td y"></span><span class="td g"></span>
+<span class="ttitle">root@jackson-herisse:~</span>
+</div>
+<div class="tbody">
+<div class="tl"><span class="tp">$</span><span class="tc">whoami</span></div>
+<div class="tl"><span class="to red">jackson_herisse — Cybersecurity / Cloud Engineer</span></div>
 
-        <div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">cat status.txt</span></div>
-        <div class="tl"><span class="to green">OPEN TO OPPORTUNITIES ✓</span></div>
+<div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">cat status.txt</span></div>
+<div class="tl"><span class="to green">OPEN TO OPPORTUNITIES ✓</span></div>
 
-        <div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">cat focus.txt</span></div>
-        <div class="tl"><span class="to">Cloud Security • Threat Detection • Network Security • Automation</span></div>
+<div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">cat focus.txt</span></div>
+<div class="tl"><span class="to">Cloud Security • Threat Detection • Network Security • Automation</span></div>
 
-        <div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">cat tools.txt</span></div>
-        <div class="tl"><span class="to">Security Onion | Wireshark | Zeek | Suricata | CrowdStrike | Azure</span></div>
+<div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">cat tools.txt</span></div>
+<div class="tl"><span class="to">Security Onion | Wireshark | Zeek | Suricata | CrowdStrike | Azure</span></div>
 
-        <div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">ls ./projects</span></div>
-        <div class="tl"><span class="to red">traffic-analysis/&nbsp;&nbsp;azure-lab/&nbsp;&nbsp;soc-automation/</span></div>
+<div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">ls ./projects</span></div>
+<div class="tl"><span class="to red">traffic-analysis/&nbsp;&nbsp;azure-lab/&nbsp;&nbsp;soc-automation/</span></div>
 
-        <div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">./run portfolio.sh</span></div>
-        <div class="tl"><span class="to green">SUCCESS — Welcome. Glad you're here.</span></div>
-        <div class="tcursor"><span class="tp">$</span><span class="tblink"></span></div>
-      </div>
-    </div>
-  </div>
+<div class="tl" style="margin-top:8px"><span class="tp">$</span><span class="tc">./run portfolio.sh</span></div>
+<div class="tl"><span class="to green">SUCCESS — Welcome. Glad you're here.</span></div>
+<div class="tcursor"><span class="tp">$</span><span class="tblink"></span></div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="sec-wrap">
-    <div class="about-grid">
-      <div class="reveal">
-        <div class="sec-eye">Who I Am</div>
-        <h2 class="sec-title">ABOUT <span>ME</span></h2>
-        <div class="about-stats">
-          <div class="stat-cell"><div class="stat-num">4.0</div><div class="stat-label">Graduate GPA</div></div>
-          <div class="stat-cell"><div class="stat-num">2+</div><div class="stat-label">Years in IT</div></div>
-          <div class="stat-cell"><div class="stat-num">10+</div><div class="stat-label">Labs &amp; Projects</div></div>
-          <div class="stat-cell"><div class="stat-num">∞</div><div class="stat-label">Curiosity</div></div>
-        </div>
-      </div>
-      <div class="about-text reveal">
-        <p>Hello! I'm <span>Jackson Herisse</span> — a graduate student at <span>Florida State University</span> pursuing an MS in Information Technology with a focus on cyber intelligence.</p>
-        <p>I currently work at <span>Lumen Technologies</span> as a Network Implementation Engineer, supporting fiber network operations, relocations, and road-move projects while strengthening my security engineering skill set.</p>
-        <p>My interests are in <span>cloud security</span>, <span>threat detection</span>, and <span>security automation</span>. I like building hands-on labs, analyzing traffic, and turning what I learn into practical, documented projects.</p>
-        <div class="certs-row">
-          <span class="cert-badge">Security Onion</span>
-          <span class="cert-badge">Wireshark</span>
-          <span class="cert-badge">Zeek</span>
-          <span class="cert-badge">Suricata</span>
-          <span class="cert-badge">Azure</span>
-          <span class="cert-badge">Zero Trust</span>
-        </div>
-        <div class="access-granted">ACCESS GRANTED. WELCOME.</div>
-      </div>
-    </div>
-  </div>
+<div class="sec-wrap">
+<div class="about-grid">
+<div class="reveal">
+<div class="sec-eye">Who I Am</div>
+<h2 class="sec-title">ABOUT <span>ME</span></h2>
+<div class="about-stats">
+<div class="stat-cell"><div class="stat-num">4.0</div><div class="stat-label">Graduate GPA</div></div>
+<div class="stat-cell"><div class="stat-num">2+</div><div class="stat-label">Years in IT</div></div>
+<div class="stat-cell"><div class="stat-num">10+</div><div class="stat-label">Labs &amp; Projects</div></div>
+<div class="stat-cell"><div class="stat-num">∞</div><div class="stat-label">Curiosity</div></div>
+</div>
+</div>
+<div class="about-text reveal">
+<p>Hello! I'm <span>Jackson Herisse</span> — a graduate student at <span>Florida State University</span> pursuing an MS in Information Technology with a focus on cyber intelligence.</p>
+<p>I currently work at <span>Lumen Technologies</span> as a Network Implementation Engineer, supporting fiber network operations, relocations, and road-move projects while strengthening my security engineering skill set.</p>
+<p>My interests are in <span>cloud security</span>, <span>threat detection</span>, and <span>security automation</span>. I like building hands-on labs, analyzing traffic, and turning what I learn into practical, documented projects.</p>
+<div class="certs-row">
+<span class="cert-badge">Security Onion</span>
+<span class="cert-badge">Wireshark</span>
+<span class="cert-badge">Zeek</span>
+<span class="cert-badge">Suricata</span>
+<span class="cert-badge">Azure</span>
+<span class="cert-badge">Zero Trust</span>
+</div>
+<div class="access-granted">ACCESS GRANTED. WELCOME.</div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="sec-wrap">
-    <div class="reveal">
-      <div class="sec-eye">What I've Built</div>
-      <h2 class="sec-title">MY <span>PROJECTS</span></h2>
-    </div>
-    <div class="projects-list">
+<div class="sec-wrap">
+<div class="reveal">
+<div class="sec-eye">What I've Built</div>
+<h2 class="sec-title">MY <span>PROJECTS</span></h2>
+</div>
+<div class="projects-list">
 
-      <div class="proj-card reveal">
-        <div class="proj-top">
-          <div class="proj-left">
-            <span class="proj-id">01</span>
-            <span class="proj-tag">NETWORK SECURITY</span>
-          </div>
-        </div>
-        <div class="proj-title">Network Traffic Analysis &amp; Anomaly Detection (Security Onion)</div>
-        <p class="proj-desc">
-          Captured and analyzed network traffic using Security Onion and Wireshark to identify suspicious patterns and potential malicious behavior.
-          Investigated protocol activity, extracted indicators, and documented findings to support detection and response workflows.
-        </p>
-        <div class="proj-tags">
-          <span class="ptag">Security Onion</span>
-          <span class="ptag">Wireshark</span>
-          <span class="ptag">Zeek</span>
-          <span class="ptag">Suricata</span>
-          <span class="ptag">IOC Logging</span>
-          <span class="ptag">Detection Notes</span>
-        </div>
-        <a href="https://github.com/jackson-builds" target="_blank" class="proj-link">VIEW ON GITHUB &rarr;</a>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-top">
+<div class="proj-left">
+<span class="proj-id">01</span>
+<span class="proj-tag">NETWORK SECURITY</span>
+</div>
+</div>
+<div class="proj-title">Network Traffic Analysis &amp; Anomaly Detection (Security Onion)</div>
+<p class="proj-desc">
+Captured and analyzed network traffic using Security Onion and Wireshark to identify suspicious patterns and potential malicious behavior.
+Investigated protocol activity, extracted indicators, and documented findings to support detection and response workflows.
+</p>
+<div class="proj-tags">
+<span class="ptag">Security Onion</span>
+<span class="ptag">Wireshark</span>
+<span class="ptag">Zeek</span>
+<span class="ptag">Suricata</span>
+<span class="ptag">IOC Logging</span>
+<span class="ptag">Detection Notes</span>
+</div>
+<a href="https://github.com/jackson-builds" target="_blank" class="proj-link">VIEW ON GITHUB &rarr;</a>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-top">
-          <div class="proj-left">
-            <span class="proj-id">02</span>
-            <span class="proj-tag">CLOUD LAB</span>
-          </div>
-        </div>
-        <div class="proj-title">Azure Security Lab (VNet Segmentation + Secure Access)</div>
-        <p class="proj-desc">
-          Built a cloud lab in Microsoft Azure with segmented subnets (web/app/mgmt), secure administration patterns, and baseline hardening.
-          Validated access controls, logged activity, and practiced troubleshooting common cloud networking and security issues.
-        </p>
-        <div class="proj-tags">
-          <span class="ptag">Azure</span>
-          <span class="ptag">VNet/Subnets</span>
-          <span class="ptag">NSGs</span>
-          <span class="ptag">Bastion/RDP</span>
-          <span class="ptag">Linux + Windows</span>
-          <span class="ptag">Hardening</span>
-        </div>
-        <a href="https://github.com/jackson-builds" target="_blank" class="proj-link">VIEW ON GITHUB &rarr;</a>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-top">
+<div class="proj-left">
+<span class="proj-id">02</span>
+<span class="proj-tag">CLOUD LAB</span>
+</div>
+</div>
+<div class="proj-title">Azure Security Lab (VNet Segmentation + Secure Access)</div>
+<p class="proj-desc">
+Built a cloud lab in Microsoft Azure with segmented subnets (web/app/mgmt), secure administration patterns, and baseline hardening.
+Validated access controls, logged activity, and practiced troubleshooting common cloud networking and security issues.
+</p>
+<div class="proj-tags">
+<span class="ptag">Azure</span>
+<span class="ptag">VNet/Subnets</span>
+<span class="ptag">NSGs</span>
+<span class="ptag">Bastion/RDP</span>
+<span class="ptag">Linux + Windows</span>
+<span class="ptag">Hardening</span>
+</div>
+<a href="https://github.com/jackson-builds" target="_blank" class="proj-link">VIEW ON GITHUB &rarr;</a>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-top">
-          <div class="proj-left">
-            <span class="proj-id">03</span>
-            <span class="proj-tag">SOC / AUTOMATION</span>
-          </div>
-        </div>
-        <div class="proj-title">Agentic AI-Driven SOC Design (Healthcare SaaS Case)</div>
-        <p class="proj-desc">
-          Designed a SOC concept for a healthcare SaaS environment emphasizing detection engineering, response playbooks, and operational visibility.
-          Focused on how SIEM + SOAR + MDR workflows can reduce alert fatigue and improve time-to-detect/time-to-respond in regulated environments.
-        </p>
-        <div class="proj-tags">
-          <span class="ptag">SIEM Concepts</span>
-          <span class="ptag">SOAR Playbooks</span>
-          <span class="ptag">Threat Detection</span>
-          <span class="ptag">Zero Trust</span>
-          <span class="ptag">Healthcare Security</span>
-          <span class="ptag">Operational Risk</span>
-        </div>
-        <a href="https://github.com/jackson-builds" target="_blank" class="proj-link">VIEW ON GITHUB &rarr;</a>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-top">
+<div class="proj-left">
+<span class="proj-id">03</span>
+<span class="proj-tag">SOC / AUTOMATION</span>
+</div>
+</div>
+<div class="proj-title">Agentic AI-Driven SOC Design (Healthcare SaaS Case)</div>
+<p class="proj-desc">
+Designed a SOC concept for a healthcare SaaS environment emphasizing detection engineering, response playbooks, and operational visibility.
+Focused on how SIEM + SOAR + MDR workflows can reduce alert fatigue and improve time-to-detect/time-to-respond in regulated environments.
+</p>
+<div class="proj-tags">
+<span class="ptag">SIEM Concepts</span>
+<span class="ptag">SOAR Playbooks</span>
+<span class="ptag">Threat Detection</span>
+<span class="ptag">Zero Trust</span>
+<span class="ptag">Healthcare Security</span>
+<span class="ptag">Operational Risk</span>
+</div>
+<a href="https://github.com/jackson-builds" target="_blank" class="proj-link">VIEW ON GITHUB &rarr;</a>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-  <div class="sec-wrap">
-    <div class="reveal">
-      <div class="sec-eye">Capabilities</div>
-      <h2 class="sec-title">MY <span>SKILLS</span></h2>
-    </div>
-    <div class="skills-categories reveal">
+<div class="sec-wrap">
+<div class="reveal">
+<div class="sec-eye">Capabilities</div>
+<h2 class="sec-title">MY <span>SKILLS</span></h2>
+</div>
+<div class="skills-categories reveal">
 
-      <!-- LANGUAGES -->
-      <div class="skill-cat">
-        <div class="skill-cat-header">
-          <span class="skill-cat-icon">⌨</span>
-          <span class="skill-cat-name">Languages</span>
-          <span class="skill-cat-count">6 TOOLS</span>
-        </div>
-        <div class="skill-cat-body">
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/><span>Python</span></div>
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/><span>Java</span></div>
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"/><span>SQL</span></div>
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"/><span>Bash</span></div>
-          <div class="skill-pill"><span class="s-icon">🖥</span><span>PowerShell</span></div>
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/><span>JavaScript</span></div>
-        </div>
-      </div>
+<!-- LANGUAGES -->
+<div class="skill-cat">
+<div class="skill-cat-header">
+<span class="skill-cat-icon">⌨</span>
+<span class="skill-cat-name">Languages</span>
+<span class="skill-cat-count">6 TOOLS</span>
+</div>
+<div class="skill-cat-body">
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/><span>Python</span></div>
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/><span>Java</span></div>
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"/><span>SQL</span></div>
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"/><span>Bash</span></div>
+<div class="skill-pill"><span class="s-icon">🖥</span><span>PowerShell</span></div>
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/><span>JavaScript</span></div>
+</div>
+</div>
 
-      <!-- SECURITY TOOLS -->
-      <div class="skill-cat">
-        <div class="skill-cat-header">
-          <span class="skill-cat-icon">🛡</span>
-          <span class="skill-cat-name">Security Tools</span>
-          <span class="skill-cat-count">7 TOOLS</span>
-        </div>
-        <div class="skill-cat-body">
-          <div class="skill-pill"><span class="s-icon">🧅</span><span>Security Onion</span></div>
-          <div class="skill-pill"><span class="s-icon">🔬</span><span>Wireshark</span></div>
-          <div class="skill-pill"><span class="s-icon">🧭</span><span>Zeek</span></div>
-          <div class="skill-pill"><span class="s-icon">🛰</span><span>Suricata</span></div>
-          <div class="skill-pill"><span class="s-icon">🛡</span><span>CrowdStrike</span></div>
-          <div class="skill-pill"><span class="s-icon">📡</span><span>Nmap</span></div>
-          <div class="skill-pill"><span class="s-icon">🧰</span><span>ServiceNow (IT Ops)</span></div>
-        </div>
-      </div>
+<!-- SECURITY TOOLS -->
+<div class="skill-cat">
+<div class="skill-cat-header">
+<span class="skill-cat-icon">🛡</span>
+<span class="skill-cat-name">Security Tools</span>
+<span class="skill-cat-count">7 TOOLS</span>
+</div>
+<div class="skill-cat-body">
+<div class="skill-pill"><span class="s-icon">🧅</span><span>Security Onion</span></div>
+<div class="skill-pill"><span class="s-icon">🔬</span><span>Wireshark</span></div>
+<div class="skill-pill"><span class="s-icon">🧭</span><span>Zeek</span></div>
+<div class="skill-pill"><span class="s-icon">🛰</span><span>Suricata</span></div>
+<div class="skill-pill"><span class="s-icon">🛡</span><span>CrowdStrike</span></div>
+<div class="skill-pill"><span class="s-icon">📡</span><span>Nmap</span></div>
+<div class="skill-pill"><span class="s-icon">🧰</span><span>ServiceNow (IT Ops)</span></div>
+</div>
+</div>
 
-      <!-- SIEM & MONITORING -->
-      <div class="skill-cat">
-        <div class="skill-cat-header">
-          <span class="skill-cat-icon">📊</span>
-          <span class="skill-cat-name">SIEM &amp; Monitoring</span>
-          <span class="skill-cat-count">4 PLATFORMS</span>
-        </div>
-        <div class="skill-cat-body">
-          <div class="skill-pill"><span class="s-icon">🧠</span><span>Detection Engineering</span></div>
-          <div class="skill-pill"><span class="s-icon">🗂</span><span>Log Analysis</span></div>
-          <div class="skill-pill"><span class="s-icon">🚨</span><span>Incident Triage</span></div>
-          <div class="skill-pill"><span class="s-icon">📈</span><span>Dashboards (Power BI)</span></div>
-        </div>
-      </div>
+<!-- SIEM & MONITORING -->
+<div class="skill-cat">
+<div class="skill-cat-header">
+<span class="skill-cat-icon">📊</span>
+<span class="skill-cat-name">SIEM &amp; Monitoring</span>
+<span class="skill-cat-count">4 PLATFORMS</span>
+</div>
+<div class="skill-cat-body">
+<div class="skill-pill"><span class="s-icon">🧠</span><span>Detection Engineering</span></div>
+<div class="skill-pill"><span class="s-icon">🗂</span><span>Log Analysis</span></div>
+<div class="skill-pill"><span class="s-icon">🚨</span><span>Incident Triage</span></div>
+<div class="skill-pill"><span class="s-icon">📈</span><span>Dashboards (Power BI)</span></div>
+</div>
+</div>
 
-      <!-- CLOUD -->
-      <div class="skill-cat">
-        <div class="skill-cat-header">
-          <span class="skill-cat-icon">☁</span>
-          <span class="skill-cat-name">Cloud &amp; Infrastructure</span>
-          <span class="skill-cat-count">5 PLATFORMS</span>
-        </div>
-        <div class="skill-cat-body">
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"/><span>Microsoft Azure</span></div>
-          <div class="skill-pill"><span class="s-icon">🧷</span><span>Identity &amp; Access (IAM)</span></div>
-          <div class="skill-pill"><span class="s-icon">🧱</span><span>Network Segmentation</span></div>
-          <div class="skill-pill"><span class="s-icon">🧪</span><span>Vulnerability Basics</span></div>
-          <div class="skill-pill"><span class="s-icon">🔐</span><span>Zero Trust Concepts</span></div>
-        </div>
-      </div>
+<!-- CLOUD -->
+<div class="skill-cat">
+<div class="skill-cat-header">
+<span class="skill-cat-icon">☁</span>
+<span class="skill-cat-name">Cloud &amp; Infrastructure</span>
+<span class="skill-cat-count">5 PLATFORMS</span>
+</div>
+<div class="skill-cat-body">
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"/><span>Microsoft Azure</span></div>
+<div class="skill-pill"><span class="s-icon">🧷</span><span>Identity &amp; Access (IAM)</span></div>
+<div class="skill-pill"><span class="s-icon">🧱</span><span>Network Segmentation</span></div>
+<div class="skill-pill"><span class="s-icon">🧪</span><span>Vulnerability Basics</span></div>
+<div class="skill-pill"><span class="s-icon">🔐</span><span>Zero Trust Concepts</span></div>
+</div>
+</div>
 
-      <!-- OS -->
-      <div class="skill-cat">
-        <div class="skill-cat-header">
-          <span class="skill-cat-icon">💻</span>
-          <span class="skill-cat-name">Operating Systems</span>
-          <span class="skill-cat-count">3 OS</span>
-        </div>
-        <div class="skill-cat-body">
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows"/><span>Windows</span></div>
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/><span>Linux</span></div>
-          <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="macOS" onerror="this.style.display='none'"/><span>macOS</span></div>
-        </div>
-      </div>
+<!-- OS -->
+<div class="skill-cat">
+<div class="skill-cat-header">
+<span class="skill-cat-icon">💻</span>
+<span class="skill-cat-name">Operating Systems</span>
+<span class="skill-cat-count">3 OS</span>
+</div>
+<div class="skill-cat-body">
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows"/><span>Windows</span></div>
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/><span>Linux</span></div>
+<div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="macOS" onerror="this.style.display='none'"/><span>macOS</span></div>
+</div>
+</div>
 
-      <!-- FRAMEWORKS & STANDARDS -->
-      <div class="skill-cat">
-        <div class="skill-cat-header">
-          <span class="skill-cat-icon">📋</span>
-          <span class="skill-cat-name">Frameworks &amp; Standards</span>
-          <span class="skill-cat-count">5 FRAMEWORKS</span>
-        </div>
-        <div class="skill-cat-body" style="grid-template-columns:repeat(auto-fill,minmax(180px,1fr))">
-          <div class="skill-pill"><span class="s-icon">⚔</span><span>MITRE ATT&amp;CK</span></div>
-          <div class="skill-pill"><span class="s-icon">🏛</span><span>NIST CSF</span></div>
-          <div class="skill-pill"><span class="s-icon">🧰</span><span>CIS Controls</span></div>
-          <div class="skill-pill"><span class="s-icon">🔟</span><span>OWASP Top 10</span></div>
-          <div class="skill-pill"><span class="s-icon">🔒</span><span>ISO 27001</span></div>
-        </div>
-      </div>
+<!-- FRAMEWORKS & STANDARDS -->
+<div class="skill-cat">
+<div class="skill-cat-header">
+<span class="skill-cat-icon">📋</span>
+<span class="skill-cat-name">Frameworks &amp; Standards</span>
+<span class="skill-cat-count">5 FRAMEWORKS</span>
+</div>
+<div class="skill-cat-body" style="grid-template-columns:repeat(auto-fill,minmax(180px,1fr))">
+<div class="skill-pill"><span class="s-icon">⚔</span><span>MITRE ATT&amp;CK</span></div>
+<div class="skill-pill"><span class="s-icon">🏛</span><span>NIST CSF</span></div>
+<div class="skill-pill"><span class="s-icon">🧰</span><span>CIS Controls</span></div>
+<div class="skill-pill"><span class="s-icon">🔟</span><span>OWASP Top 10</span></div>
+<div class="skill-pill"><span class="s-icon">🔒</span><span>ISO 27001</span></div>
+</div>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="sec-wrap">
-    <div class="contact-grid">
-      <div class="reveal">
-        <div class="sec-eye">Let's Talk</div>
-        <h2 class="sec-title">GET IN <span>TOUCH</span></h2>
-        <p class="contact-intro">Want to connect, collaborate, or talk cybersecurity/cloud? Transmit a message — I’ll respond as soon as I can.</p>
-        <div class="contact-links">
-          <a href="mailto:YOUR_EMAIL_HERE" class="c-link"><span class="c-icon">✉</span>YOUR_EMAIL_HERE</a>
-          <a href="https://github.com/jackson-builds" target="_blank" class="c-link"><span class="c-icon">⌥</span>github.com/jackson-builds</a>
-          <a href="https://www.linkedin.com/in/jackson-herisse/" target="_blank" class="c-link"><span class="c-icon">in</span>linkedin.com/in/jackson-herisse</a>
-        </div>
-      </div>
-      <div class="hack-form reveal">
-        <div class="form-row">
-          <label class="form-lbl">// IDENTIFY YOURSELF</label>
-          <input class="form-in" placeholder="Your name" type="text"/>
-        </div>
-        <div class="form-row">
-          <label class="form-lbl">// TRANSMISSION ADDRESS</label>
-          <input class="form-in" placeholder="your@email.com" type="email"/>
-        </div>
-        <div class="form-row">
-          <label class="form-lbl">// MESSAGE PAYLOAD</label>
-          <textarea class="form-ta" placeholder="Type your message..."></textarea>
-        </div>
-        <button class="btn-send" onclick="this.textContent='TRANSMITTED ✓';this.style.background='var(--red)';this.style.color='#000'">TRANSMIT &rarr;</button>
-      </div>
-    </div>
-  </div>
+<div class="sec-wrap">
+<div class="contact-grid">
+<div class="reveal">
+<div class="sec-eye">Let's Talk</div>
+<h2 class="sec-title">GET IN <span>TOUCH</span></h2>
+<p class="contact-intro">Want to connect, collaborate, or talk cybersecurity/cloud? Transmit a message — I’ll respond as soon as I can.</p>
+<div class="contact-links">
+<a href="mailto:YOUR_EMAIL_HERE" class="c-link"><span class="c-icon">✉</span>YOUR_EMAIL_HERE</a>
+<a href="https://github.com/jackson-builds" target="_blank" class="c-link"><span class="c-icon">⌥</span>github.com/jackson-builds</a>
+<a href="https://www.linkedin.com/in/jackson-herisse/" target="_blank" class="c-link"><span class="c-icon">in</span>linkedin.com/in/jackson-herisse</a>
+</div>
+</div>
+<div class="hack-form reveal">
+<div class="form-row">
+<label class="form-lbl">// IDENTIFY YOURSELF</label>
+<input class="form-in" placeholder="Your name" type="text"/>
+</div>
+<div class="form-row">
+<label class="form-lbl">// TRANSMISSION ADDRESS</label>
+<input class="form-in" placeholder="your@email.com" type="email"/>
+</div>
+<div class="form-row">
+<label class="form-lbl">// MESSAGE PAYLOAD</label>
+<textarea class="form-ta" placeholder="Type your message..."></textarea>
+</div>
+<button class="btn-send" onclick="this.textContent='TRANSMITTED ✓';this.style.background='var(--red)';this.style.color='#000'">TRANSMIT &rarr;</button>
+</div>
+</div>
+</div>
 </section>
 
 <footer>
-  <span>&copy; 2026 <span class="red">JACKSON_HERISSE</span>. All rights reserved.</span>
-  <span>Built with <span class="red">♥</span> and terminal energy.</span>
+<span>&copy; 2026 <span class="red">JACKSON_HERISSE</span>. All rights reserved.</span>
+<span>Built with <span class="red">♥</span> and terminal energy.</span>
 </footer>
 
 <script>
@@ -550,15 +550,15 @@ const fs=13;let cols,drops;
 resize();window.addEventListener('resize',resize);
 const chars='01アイウエオカキクサシスセソタチツテトナニハヒフヘホ$#@%&*><';
 function draw(){
-  ctx.fillStyle='rgba(0,0,0,0.05)';ctx.fillRect(0,0,canvas.width,canvas.height);
-  ctx.font=fs+'px Share Tech Mono';
-  for(let i=0;i<drops.length;i++){
-    const c=chars[Math.floor(Math.random()*chars.length)];
-    ctx.fillStyle=Math.random()>0.95?'#00e5ff':'#003a66';
-    ctx.fillText(c,i*fs,drops[i]*fs);
-    if(drops[i]*fs>canvas.height&&Math.random()>0.975)drops[i]=0;
-    drops[i]++;
-  }
+ctx.fillStyle='rgba(0,0,0,0.05)';ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.font=fs+'px Share Tech Mono';
+for(let i=0;i<drops.length;i++){
+const c=chars[Math.floor(Math.random()*chars.length)];
+ctx.fillStyle=Math.random()>0.95?'#00e5ff':'#003a66';
+ctx.fillText(c,i*fs,drops[i]*fs);
+if(drops[i]*fs>canvas.height&&Math.random()>0.975)drops[i]=0;
+drops[i]++;
+}
 }
 setInterval(draw,50);
 
@@ -567,20 +567,20 @@ const cur=document.getElementById('cur');
 const trail=document.getElementById('trail');
 let mx=0,my=0;
 document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  cur.style.left=mx+'px';cur.style.top=my+'px';
-  trail.style.left=mx+'px';trail.style.top=my+'px';
+mx=e.clientX;my=e.clientY;
+cur.style.left=mx+'px';cur.style.top=my+'px';
+trail.style.left=mx+'px';trail.style.top=my+'px';
 });
 document.querySelectorAll('a,button,.proj-card,.skill-pill').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(1.8)'});
-  el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)'});
+el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(1.8)'});
+el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)'});
 });
 
 // SCROLL REVEAL
 const obs=new IntersectionObserver(entries=>{
-  entries.forEach((e,i)=>{
-    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target)}
-  });
+entries.forEach((e,i)=>{
+if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target)}
+});
 },{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
@@ -588,113 +588,9 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 const secs=document.querySelectorAll('section');
 const navAs=document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll',()=>{
-  let active='';
-  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-200)active=s.id});
-  navAs.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+active?'var(--red)':''});
-
-  /* =========================
-   SOC DASHBOARD ENHANCEMENTS
-   ========================= */
-
-/* Subtle grid + vignette behind everything */
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:
-    linear-gradient(rgba(0,229,255,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,229,255,0.06) 1px, transparent 1px);
-  background-size: 48px 48px;
-  opacity: 0.08;
-  pointer-events:none;
-  z-index: 0;
-  mix-blend-mode: screen;
-}
-
-/* Make panels feel like glass */
-.skill-cat,
-.proj-card,
-.hero-terminal,
-.stat-cell{
-  background: rgba(3,12,34,0.45);
-  backdrop-filter: blur(10px);
-}
-
-/* Skill tiles: glow + scan sweep */
-.skill-pill{
-  position:relative;
-  overflow:hidden;
-  border: 1px solid rgba(0,229,255,0.16);
-  background: linear-gradient(180deg, rgba(3,12,34,0.55), rgba(2,6,23,0.55));
-  box-shadow: 0 0 0 rgba(0,0,0,0);
-  transition: transform .15s ease, border-color .2s ease, box-shadow .2s ease;
-}
-
-.skill-pill::before{
-  content:"";
-  position:absolute;
-  inset:-2px;
-  background: radial-gradient(500px 120px at 10% 0%, rgba(0,229,255,0.16), transparent 55%);
-  opacity:0;
-  transition: opacity .2s ease;
-  pointer-events:none;
-}
-
-.skill-pill::after{
-  content:"";
-  position:absolute;
-  top:-40%;
-  left:-60%;
-  width:60%;
-  height:180%;
-  background: linear-gradient(90deg, transparent, rgba(0,229,255,0.22), transparent);
-  transform: rotate(18deg);
-  opacity:0;
-  pointer-events:none;
-}
-
-.skill-pill:hover{
-  transform: translateY(-1px);
-  border-color: rgba(0,229,255,0.55);
-  box-shadow: 0 0 18px rgba(0,229,255,0.18), 0 0 42px rgba(0,149,255,0.12);
-}
-
-.skill-pill:hover::before{ opacity:1; }
-
-.skill-pill:hover::after{
-  opacity: 1;
-  animation: soc-sweep .85s ease-out 1;
-}
-
-@keyframes soc-sweep{
-  from{ left:-70%; }
-  to{ left:140%; }
-}
-
-/* Category headers: “active console” feel */
-.skill-cat-header{
-  position:relative;
-}
-
-.skill-cat-header::after{
-  content:"";
-  position:absolute;
-  left:0; right:0; bottom:-1px;
-  height:1px;
-  background: linear-gradient(90deg, transparent, rgba(0,229,255,0.35), transparent);
-  opacity:0.55;
-}
-
-/* Section title glow stays cyan */
-.sec-title span{
-  color: var(--red);
-  text-shadow: 0 0 16px var(--red), 0 0 30px var(--red-glow);
-}
-
-/* Optional: make the “SYSTEM ONLINE” look like a status LED */
-.nav-status{
-  text-shadow: 0 0 10px rgba(0,229,255,0.22);
-}
+let active='';
+secs.forEach(s=>{if(window.scrollY>=s.offsetTop-200)active=s.id});
+navAs.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+active?'var(--red)':''});
 });
 </script>
 </body>
