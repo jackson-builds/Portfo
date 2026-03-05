@@ -103,7 +103,10 @@ section{position:relative;z-index:1}
 .sec-wrap{max-width:1200px;margin:0 auto}
 .sec-eye{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--red);margin-bottom:12px;display:flex;align-items:center;gap:10px}
 .sec-eye::before{content:'//';color:var(--red-dim)}
-.sec-title{font-family:var(--display);font-size:clamp(26px,3.5vw,46px);font-weight:900;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:48px;line-height:1.1}
+.sec-title span{
+  color: var(--red);
+  text-shadow: 0 0 16px var(--red), 0 0 28px var(--red-glow);
+}
 .sec-title span{color:var(--red);text-shadow:0 0 20px rgba(255,10,10,0.4)}
 
 /* ── ABOUT ── */
