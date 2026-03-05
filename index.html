@@ -55,8 +55,24 @@ section{position:relative;z-index:1}
 @keyframes type-h{to{width:40ch}}
 .hero-name{font-family:var(--display);font-size:clamp(38px,5.5vw,78px);font-weight:900;line-height:1.0;letter-spacing:-0.01em;margin-bottom:14px;text-transform:uppercase}
 .hero-name .l1{color:var(--text);display:block}
-.hero-name .l2{color:var(--red);display:block;text-shadow:0 0 30px rgba(255,10,10,0.6),0 0 60px rgba(255,10,10,0.3);animation:glitch 4s infinite}
-@keyframes glitch{0%,95%,100%{text-shadow:0 0 30px rgba(255,10,10,0.6);transform:none}96%{transform:translate(-3px,0);text-shadow:3px 0 var(--red),-3px 0 #ff0a0a88}97%{transform:translate(3px,0);text-shadow:-3px 0 var(--red),3px 0 #ff0a0a88}98%{transform:none}}
+.hero-name .l2{
+  color:var(--red); display:block; ext-shadow:0 0 20px var(--red), 0 0 40px var(--red-glow);
+  animation:glitch 4s infinite
+}@keyframes glitch{
+  0%,95%,100%{
+    text-shadow:0 0 20px var(--red);
+    transform:none
+  }
+  96%{
+    transform:translate(-3px,0);
+    text-shadow:3px 0 var(--red),-3px 0 var(--red-glow)
+  }
+  97%{
+    transform:translate(3px,0);
+    text-shadow:-3px 0 var(--red),3px 0 var(--red-glow)
+  }
+  98%{transform:none}
+}
 .hero-role{font-family:var(--vt);font-size:24px;color:var(--red);letter-spacing:0.1em;margin-bottom:24px}
 .hero-role::before{content:'[ '}
 .hero-role::after{content:' ]'}
