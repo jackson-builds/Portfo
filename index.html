@@ -8,13 +8,19 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#000;--bg2:#050505;--bg3:#0a0a0a;--panel:#0d0000;
-  --red:#ff0a0a;--red2:#cc0000;--red-dim:#660000;
-  --red-glow:rgba(255,10,10,0.15);
-  --text:#e8e8e8;--dim:#444;--muted:#666;
-  --mono:'Share Tech Mono',monospace;
-  --display:'Orbitron',sans-serif;
-  --vt:'VT323',monospace;
+  --bg:#020617;
+  --bg2:#020617;
+  --bg3:#030b1f;
+  --panel:#030c22;
+
+  --red:#00e5ff;
+  --red2:#0095ff;
+  --red-dim:#0a2f4d;
+  --red-glow:rgba(0,200,255,0.25);
+
+  --text:#e6f3ff;
+  --dim:#3a5166;
+  --muted:#5d7a94;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--mono);overflow-x:hidden;cursor:none}
@@ -22,7 +28,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);overflow-x:h
 /* SCANLINES */
 body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.06) 2px,rgba(0,0,0,0.06) 4px);pointer-events:none;z-index:9990}
 
-#matrix{position:fixed;inset:0;opacity:0.07;z-index:0;pointer-events:none}
+#{position:fixed;inset:0;opacity:0.07;z-index:0;pointer-events:none}
 
 /* CURSOR */
 .cursor{width:12px;height:12px;background:var(--red);position:fixed;transform:translate(-50%,-50%);pointer-events:none;z-index:9999;clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);box-shadow:0 0 10px var(--red),0 0 20px var(--red);transition:transform 0.08s}
@@ -517,7 +523,7 @@ function draw(){
   ctx.font=fs+'px Share Tech Mono';
   for(let i=0;i<drops.length;i++){
     const c=chars[Math.floor(Math.random()*chars.length)];
-    ctx.fillStyle=Math.random()>0.95?'#ff0a0a':'#660000';
+    ctx.fillStyle=Math.random()>0.95?'#00e5ff':'#003a66';
     ctx.fillText(c,i*fs,drops[i]*fs);
     if(drops[i]*fs>canvas.height&&Math.random()>0.975)drops[i]=0;
     drops[i]++;
